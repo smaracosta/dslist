@@ -1,6 +1,7 @@
 package com.samara.dslist.dto;
 
 import com.samara.dslist.entities.Game;
+import com.samara.dslist.projections.GameMinProjection;
 
 // classe que representa somente os dados que queremos devolver neste endpoint.
 public class GameMinDto {
@@ -20,6 +21,14 @@ public class GameMinDto {
         year = entity.getYear();
         imgUrl = entity.getImgUrl();
         shortDescription = entity.getShortDescription();
+    }
+
+    public GameMinDto(GameMinProjection projection) {
+        id = projection.getId();
+        title = projection.getTitle();
+        year = projection.getYear();
+        imgUrl = projection.getImgUrl();
+        shortDescription = projection.getShortDescription();
     }
 
     public Long getId() {
