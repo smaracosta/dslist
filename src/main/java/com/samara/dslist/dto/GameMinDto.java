@@ -2,7 +2,7 @@ package com.samara.dslist.dto;
 
 import com.samara.dslist.entities.Game;
 
-
+// classe que representa somente os dados que queremos devolver neste endpoint.
 public class GameMinDto {
 
     private Long id; //pk

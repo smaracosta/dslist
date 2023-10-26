@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+@Service // @Service = indica ao Spring que essa classe se trata de um serviço
 public class GameService {
 
     @Autowired // Resolve a dependência

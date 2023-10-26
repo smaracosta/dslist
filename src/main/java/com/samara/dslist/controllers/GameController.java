@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-
+//O controller serve para mapear o endereço
 @RestController
 @RequestMapping(value = "/games")
 public class GameController { // "Porta de entrada" do Back-end, ele é quem disponibiliza a API. O Controlador que liga o Back e o front.
